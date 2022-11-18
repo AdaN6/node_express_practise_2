@@ -12,7 +12,7 @@ router.get("/new", (req, res) => {
 });
 
 router.post("/", (req, res) => {
-    const isValue = false
+    const isValue = true
 if (isValue) {
     users.push({ firstName: req.body.firstName})
     res.redirect(`/users/${users.length -1}`)
