@@ -4,6 +4,9 @@ const app = express()
 app.set('view engine', 'ejs')
 // app.use(logger)
 
+app.use(express.static("public"))
+app.use(express.urlencoded({ extended: true}))
+
 app.get('/', (req, res) => {
 // console.log('now')
 // res.sendStatus(500)

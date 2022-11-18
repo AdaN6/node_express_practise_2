@@ -7,10 +7,13 @@
     <title>Document</title>
 </head>
 <body>
-    <!-- Hello -->
+    <form action="/users" method="POST">
+        <label>First Name
+            <input type="text" name="firstName" value="<%= locals.firstName%>"/>
+        </label>
+        <button type="submit">Submit</button>
 
-  <!-- Hello  <%= 2 + 2 %> -->
-    Hello  <%= locals.text || 'Default' %>
-
+    </form>
+    
 </body>
 </html>
