@@ -2,9 +2,10 @@ const express = require('express')
 const app = express()
 
 app.set('view engine', 'ejs')
+// app.use(logger)
 
 app.get('/', (req, res) => {
-console.log('now')
+// console.log('now')
 // res.sendStatus(500)
 // res.status(500).send("hi")
 // res.status(500).json({message: "Error"});
@@ -20,6 +21,6 @@ const userRouter = require('./routes/users');
 
 app.use('/users', userRouter)
 
-// lopgger middleware
+
 
 app.listen(3000)
