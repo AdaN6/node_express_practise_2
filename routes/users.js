@@ -4,6 +4,7 @@ const router = express.Router()
 router.use(logger);
 
 router.get("/", (req, res) => {
+    console.log(req.query.name)
   res.send("User List");
 });
 
@@ -29,6 +30,7 @@ router
   .route("/:id")
   .get((req, res) => {
     // console.log(req.user)
+    console.log(req.user)
     res.send(`Get User with ID ${req.params.id}`);
   })
   .put((req, res) => {
