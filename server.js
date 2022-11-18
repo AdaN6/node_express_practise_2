@@ -12,8 +12,12 @@ console.log('now')
 // res.download("server.js");
 // res.render('index')
 res.render("index", { text: 'World' });
-
-
 })
+
+// using Router
+
+const userRouter = require('./routes/users');
+
+app.use('/users', userRouter)
 
 app.listen(3000)
