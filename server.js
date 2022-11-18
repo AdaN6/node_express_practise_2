@@ -20,4 +20,6 @@ const userRouter = require('./routes/users');
 
 app.use('/users', userRouter)
 
+// lopgger middleware
+
 app.listen(3000)
